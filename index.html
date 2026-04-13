@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnelRij Voorbeeld — Rijschool Utrecht</title>
+  <meta name="description" content="SnelRij Voorbeeld is de snelste weg naar je rijbewijs in Utrecht. Spoedcursussen, persoonlijke lessen en een torenhoog slagingspercentage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>Snel</span>Rij<span class="dot"></span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#diensten" class="active">Diensten</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallerij">Gallerij</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact" class="nav-cta">Start Nu</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-animate="fade-right">
+          <div class="hero-badge">
+            <i data-lucide="zap" style="width:14px;height:14px;"></i>
+            // fastest_driving_school_utrecht
+          </div>
+          <h1>Jouw rijbewijs.<br><span>Sneller dan je denkt.</span></h1>
+          <p class="hero-text">
+            SnelRij combineert efficiëntie met kwaliteit. Geen overbodige lessen, geen wachttijden. Jij bepaalt het tempo, wij zorgen dat je slaagt.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">
+              <i data-lucide="rocket" style="width:18px;height:18px;"></i>
+              Boek Proefles
+            </a>
+            <a href="#diensten" class="btn-outline">
+              <i data-lucide="chevron-down" style="width:18px;height:18px;"></i>
+              Bekijk Aanbod
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-animate="fade-left">
+          <img src="images/hero.jpg" alt="Rijles in Utrecht met SnelRij" loading="eager">
+          <div class="hero-float-stat">
+            <div class="number">97%</div>
+            <div class="label">slagingspercentage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:car"></iconify-icon> Rijlessen B</span><span><iconify-icon icon="lucide:zap"></iconify-icon> Spoedcursus</span><span><iconify-icon icon="lucide:bike"></iconify-icon> Motor A</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Faalangst</span><span><iconify-icon icon="lucide:refresh-cw"></iconify-icon> Opfris</span><span><iconify-icon icon="lucide:book-open"></iconify-icon> Theorie</span><span><iconify-icon icon="lucide:car"></iconify-icon> Rijlessen B</span><span><iconify-icon icon="lucide:zap"></iconify-icon> Spoedcursus</span><span><iconify-icon icon="lucide:bike"></iconify-icon> Motor A</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Faalangst</span><span><iconify-icon icon="lucide:refresh-cw"></iconify-icon> Opfris</span><span><iconify-icon icon="lucide:book-open"></iconify-icon> Theorie</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+  
+  <!-- ======================== BEFORE / AFTER ======================== -->
+  <section class="ba-section" style="height:100vh;position:relative;overflow:hidden;background:#000;">
+    <div style="width:100%;height:100%;position:relative;">
+      <img src="images/craft.jpg" alt="Na" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+      <img src="images/hero.jpg" alt="Voor" id="baBefore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
+      <div id="baLabel" style="position:absolute;z-index:3;bottom:10%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;">
+        <span style="display:inline-block;background:var(--color-accent,#C1FF72);color:#0a0a0a;padding:8px 20px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Scroll om te zien</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,0.6);">Van oud naar <em style="color:var(--color-accent,#C1FF72);">nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+<!-- SERVICES -->
+  <section class="services" id="diensten">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="terminal" style="width:14px;height:14px;"></i> // diensten</div>
+        <h2 class="section-title">Alles voor jouw rijbewijs</h2>
+        <p class="section-subtitle">Van de eerste koppeling tot het CBR-examen. Elke les is afgestemd op jouw niveau en leerdoelen.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-icon"><i data-lucide="car" style="width:24px;height:24px;"></i></div>
+          <h3>Autorijlessen (B)</h3>
+          <p>Rijlessen in een nieuwe, comfortabele lesauto. Elke les bouwen we voort op de vorige, zodat je efficiënt naar examen-niveau groeit.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="80">
+          <div class="service-icon"><i data-lucide="zap" style="width:24px;height:24px;"></i></div>
+          <h3>Spoedcursus</h3>
+          <p>In 2-4 weken je rijbewijs. Dagelijkse lessen, snelle CBR-planning en volledige focus. Ideaal als je haast hebt met je rijbewijs.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="160">
+          <div class="service-icon"><i data-lucide="bike" style="width:24px;height:24px;"></i></div>
+          <h3>Motorrijlessen (A)</h3>
+          <p>AVB en AVD op eigen terrein, daarna de openbare weg. Wij leiden je op voor A1, A2 of het volledige A-rijbewijs.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="240">
+          <div class="service-icon"><i data-lucide="heart" style="width:24px;height:24px;"></i></div>
+          <h3>Faalangstcoach</h3>
+          <p>Speciale examenbegeleiding door een gecertificeerde faalangstcoach. Leer technieken om rustig te blijven en je examen te halen.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="320">
+          <div class="service-icon"><i data-lucide="refresh-cw" style="width:24px;height:24px;"></i></div>
+          <h3>Opfrislessen</h3>
+          <p>Lang niet gereden of onzeker in het verkeer? In 3-5 lessen fris je je rijvaardigheid op en rijd je weer met vertrouwen.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="400">
+          <div class="service-icon"><i data-lucide="book-open" style="width:24px;height:24px;"></i></div>
+          <h3>Theorie Online</h3>
+          <p>Online theorie-opleiding met onbeperkt oefenexamens, video-uitleg en voortgangsrapportage. Gemiddeld klaar in 2 weken.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-animate="fade-up" data-delay="0">
+          <div class="stat-number" data-count="97">0</div>
+          <div class="stat-label">% Slagingspercentage</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="100">
+          <div class="stat-number" data-count="1800">0</div>
+          <div class="stat-label">Rijbewijzen Uitgedeeld</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="200">
+          <div class="stat-number" data-count="10">0</div>
+          <div class="stat-label">Jaar Actief</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="300">
+          <div class="stat-number" data-count="6">0</div>
+          <div class="stat-label">Top Instructeurs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="message-square" style="width:14px;height:14px;"></i> // reviews</div>
+        <h2 class="section-title">Wat leerlingen zeggen</h2>
+        <p class="section-subtitle">Echte ervaringen van leerlingen die hun rijbewijs haalden bij SnelRij Voorbeeld.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-animate="fade-up" data-delay="0">
+          <div class="stars">
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+          </div>
+          <p class="testimonial-text">"Geen loze praatjes, gewoon resultaat. Mijn instructeur was direct, eerlijk en maakte me echt klaar voor het examen. In 22 lessen geslaagd."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">D</div>
+            <div>
+              <div class="testimonial-name">Daan Vermeer</div>
+              <div class="testimonial-role">22 lessen // geslaagd</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-animate="fade-up" data-delay="120">
+          <div class="stars">
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+          </div>
+          <p class="testimonial-text">"De spoedcursus van SnelRij is briljant. Elke dag les, geen tijd verspild. Na 2,5 week had ik mijn rijbewijs. Perfecte organisatie van begin tot eind."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">N</div>
+            <div>
+              <div class="testimonial-name">Noor Al-Hassan</div>
+              <div class="testimonial-role">spoedcursus // 2.5 weken</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-animate="fade-up" data-delay="240">
+          <div class="stars">
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+            <i data-lucide="star" style="width:16px;height:16px;fill:var(--lime);"></i>
+          </div>
+          <p class="testimonial-text">"Als 35-jarige dacht ik dat het te laat was. Onzin. SnelRij gaf me vertrouwen, de opfrislessen waren precies wat ik nodig had. Nu rij ik met plezier."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">K</div>
+            <div>
+              <div class="testimonial-name">Karin de Boer</div>
+              <div class="testimonial-role">opfrisles // vol vertrouwen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallerij">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="camera" style="width:14px;height:14px;"></i> // gallerij</div>
+        <h2 class="section-title">SnelRij in beeld</h2>
+        <p class="section-subtitle">Onze lesauto's, het team en onze leerlingen in actie op de wegen van Utrecht.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-animate="fade-up" data-delay="0"><img src="images/hero.jpg" alt="Rijles Utrecht" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="40"><img src="images/about.jpg" alt="Over SnelRij" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="80"><img src="images/carousel.jpg" alt="Lesauto SnelRij" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="120"><img src="images/craft.jpg" alt="Rijvaardigheid training" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="160"><img src="images/cta-bg.jpg" alt="Achtergrond SnelRij" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="200"><img src="images/detail.jpg" alt="Lesauto detail" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="240"><img src="images/kitchen.jpg" alt="Kantoor SnelRij" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="280"><img src="images/project1.jpg" alt="Leerling geslaagd" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="320"><img src="images/project2.jpg" alt="Snelweg les" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="360"><img src="images/team.jpg" alt="Team SnelRij" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="help-circle" style="width:14px;height:14px;"></i> // faq</div>
+        <h2 class="section-title">Veelgestelde vragen</h2>
+        <p class="section-subtitle">Snelle antwoorden op je belangrijkste vragen over rijlessen bij SnelRij.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active" data-animate="fade-up" data-delay="0">
+          <button class="faq-question">
+            Hoe snel kan ik mijn rijbewijs halen?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Met onze spoedcursus kun je binnen 2-4 weken examen doen. Bij reguliere lessen (2-3x per week) heb je gemiddeld 8-12 weken nodig. Tijdens je proefles bespreken we de snelste route naar jouw rijbewijs.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="80">
+          <button class="faq-question">
+            Wat onderscheidt SnelRij van andere rijscholen?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Efficiëntie. Elke les heeft een duidelijk leerdoel, geen herhaling zonder reden. Onze instructeurs werken met een gestructureerd leerplan en geven je na elke les concrete feedback via een app.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="160">
+          <button class="faq-question">
+            Zijn er verborgen kosten?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Nee, nooit. Je betaalt per les of per pakket. De prijs die we afspreken is inclusief alles: ophalen, terugbrengen, tussentijdse toets-begeleiding en examenvorbereiding. Geen administratiekosten of boekingsfees.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="240">
+          <button class="faq-question">
+            Kan ik 's avonds of in het weekend les?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ja. Wij bieden lessen aan van maandag tot en met zaterdag, inclusief avonduren. Plan je lessen flexibel in via ons online systeem op tijden die jou uitkomen.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="320">
+          <button class="faq-question">
+            Rijden jullie ook automaat?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ja, wij hebben zowel handgeschakelde als automatische lesauto's. Steeds meer leerlingen kiezen voor automaat — het bespaart gemiddeld 5-8 lessen en je bent sneller klaar voor het examen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <h2>Klaar voor de snelste weg naar je rijbewijs?</h2>
+        <p>Boek je gratis proefles en ontdek waarom 1.800+ leerlingen kozen voor SnelRij Voorbeeld in Utrecht.</p>
+        <a href="tel:+31301234567" class="btn-primary">
+          <i data-lucide="phone" style="width:18px;height:18px;"></i>
+          Bel: 030 - 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>Snel</span>Rij<span class="dot"></span></div>
+          <p>De snelste weg naar je rijbewijs in Utrecht. Geen overbodige lessen, geen wachttijden. Gewoon resultaat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="#diensten">Autorijlessen</a></li>
+            <li><a href="#diensten">Spoedcursus</a></li>
+            <li><a href="#diensten">Motorrijlessen</a></li>
+            <li><a href="#diensten">Faalangst Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31301234567">030 - 123 4567</a></li>
+            <li><a href="mailto:info@snelrijvoorbeeld.nl">info@snelrijvoorbeeld.nl</a></li>
+            <li>Oudegracht 150</li>
+            <li>3511 AZ Utrecht</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 SnelRij Voorbeeld</span>
+        <span>KvK: 55667788 // BTW: NL005566778B01</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STUDIOLEE BADGE -->
+  <a href="https://www.studiolee.nl/rijscholen" class="studiolee-badge" target="_blank" rel="noopener">
+    website // <span>StudioLee</span>
+  </a>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('[data-animate="fade-up"]').forEach(el => {
+      const delay = parseInt(el.dataset.delay || 0) / 1000;
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+        y: 50, opacity: 0, duration: 0.8, delay, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-animate="fade-right"]').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+        x: -60, opacity: 0, duration: 1, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-animate="fade-left"]').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+        x: 60, opacity: 0, duration: 1, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.dataset.count);
+      gsap.to(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        innerText: target,
+        duration: 2,
+        snap: { innerText: 1 },
+        ease: 'power2.out'
+      });
+    });
+
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+  </script>
+
+    // Before/After slider
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before || typeof gsap === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline({
+        scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 }
+      });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — SnelRij Voorbeeld | Rijles Tips & Tricks Utrecht</title>
+  <meta name="description" content="Rijlessen tips, theorie-advies en ervaringsverhalen. Het blog van SnelRij Voorbeeld, de efficiëntste rijschool van Utrecht.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>Snel</span>Rij<span class="dot"></span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#diensten">Diensten</a></li>
+          <li><a href="index.html#stats">Stats</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#gallerij">Gallerij</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Start Nu</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container" data-animate="fade-up">
+      <div class="section-label"><i data-lucide="file-text" style="width:14px;height:14px;"></i> // blog</div>
+      <h1 class="section-title">Kennis, tips & ervaringen</h1>
+      <p class="section-subtitle" style="margin:0 auto;">Alles over rijlessen, verkeersregels, examenstress en de weg naar je rijbewijs. Geschreven door onze instructeurs.</p>
+    </div>
+  </section>
+
+  <!-- BLOG FILTERS -->
+  <section style="padding:0 0 20px;">
+    <div class="container">
+      <div class="blog-filters" data-animate="fade-up">
+        <button class="filter-btn active">// alles</button>
+        <button class="filter-btn">Rijlessen</button>
+        <button class="filter-btn">Theorie</button>
+        <button class="filter-btn">Tips</button>
+        <button class="filter-btn">Ervaring</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section style="padding:0 0 100px;">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="0">
+          <div class="blog-card-image">
+            <img src="images/hero.jpg" alt="Spoedcursus rijbewijs Utrecht" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Rijlessen</span>
+              <span class="blog-date">11 apr 2026</span>
+            </div>
+            <h3><a href="#">Spoedcursus vs. regulier: welke route past bij jou?</a></h3>
+            <p class="blog-excerpt">De keuze tussen een spoedcursus en reguliere lessen hangt af van meer dan alleen tijd. We vergelijken kosten, stress-niveau, slagingskans en leerstijlen om je te helpen de juiste keuze te maken.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="80">
+          <div class="blog-card-image">
+            <img src="images/about.jpg" alt="Theorie-examen tips tricks" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Theorie</span>
+              <span class="blog-date">5 apr 2026</span>
+            </div>
+            <h3><a href="#">Theorie-examen hacken: de 5 patronen die je moet kennen</a></h3>
+            <p class="blog-excerpt">CBR-examenvragen volgen vaste patronen. Als je die patronen herkent, wordt het examen voorspelbaar. Onze instructeurs delen 5 herkenbare patronen met concrete voorbeeldvragen.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="160">
+          <div class="blog-card-image">
+            <img src="images/carousel.jpg" alt="Noor ervaring spoedcursus" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Ervaring</span>
+              <span class="blog-date">28 mrt 2026</span>
+            </div>
+            <h3><a href="#">Noor: "Ik had mijn rijbewijs nodig voor mijn nieuwe baan"</a></h3>
+            <p class="blog-excerpt">Noor Al-Hassan moest binnen een maand haar rijbewijs halen. Lees hoe ze met de SnelRij spoedcursus in 2,5 week slaagde en wat haar het meeste hielp tijdens het intensieve traject.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="0">
+          <div class="blog-card-image">
+            <img src="images/craft.jpg" alt="Automaat of handgeschakeld rijbewijs" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Tips</span>
+              <span class="blog-date">21 mrt 2026</span>
+            </div>
+            <h3><a href="#">Automaat rijbewijs: sneller klaar, maar is het slim?</a></h3>
+            <p class="blog-excerpt">Met een automatrijbewijs bespaar je gemiddeld 5-8 lessen. Maar mag je dan nog handgeschakeld rijden? We bespreken de voor- en nadelen, kosten en toekomstperspectief van beide opties.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="80">
+          <div class="blog-card-image">
+            <img src="images/project2.jpg" alt="Eerste keer snelweg rijles" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Rijlessen</span>
+              <span class="blog-date">14 mrt 2026</span>
+            </div>
+            <h3><a href="#">Je eerste keer op de snelweg: dit moet je weten</a></h3>
+            <p class="blog-excerpt">Invoegen, 100 km/h, vrachtwagens — de snelweg kan overweldigend zijn. We leggen stap voor stap uit wat je kunt verwachten en hoe onze instructeurs je voorbereiden op deze milestone.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="160">
+          <div class="blog-card-image">
+            <img src="images/team.jpg" alt="Examenstress overwinnen tips" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Ervaring</span>
+              <span class="blog-date">7 mrt 2026</span>
+            </div>
+            <h3><a href="#">De dag van het examen: zo blijf je kalm</a></h3>
+            <p class="blog-excerpt">Examenstress is normaal, maar het hoeft je niet te verlammen. Onze faalangstcoach deelt 6 technieken die je direct kunt toepassen op de ochtend van je rijexamen bij het CBR.</p>
+            <a href="#" class="blog-read-more">lees meer <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <h2>Klaar om te starten?</h2>
+        <p>Boek je gratis proefles en ontdek de snelste route naar je rijbewijs met SnelRij Voorbeeld.</p>
+        <a href="tel:+31301234567" class="btn-primary">
+          <i data-lucide="phone" style="width:18px;height:18px;"></i>
+          Bel: 030 - 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>Snel</span>Rij<span class="dot"></span></div>
+          <p>De snelste weg naar je rijbewijs in Utrecht. Geen overbodige lessen, geen wachttijden. Gewoon resultaat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="index.html#diensten">Autorijlessen</a></li>
+            <li><a href="index.html#diensten">Spoedcursus</a></li>
+            <li><a href="index.html#diensten">Motorrijlessen</a></li>
+            <li><a href="index.html#diensten">Faalangst Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31301234567">030 - 123 4567</a></li>
+            <li><a href="mailto:info@snelrijvoorbeeld.nl">info@snelrijvoorbeeld.nl</a></li>
+            <li>Oudegracht 150</li>
+            <li>3511 AZ Utrecht</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 SnelRij Voorbeeld</span>
+        <span>KvK: 55667788 // BTW: NL005566778B01</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STUDIOLEE BADGE -->
+  <a href="https://www.studiolee.nl/rijscholen" class="studiolee-badge" target="_blank" rel="noopener">
+    website // <span>StudioLee</span>
+  </a>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('[data-animate="fade-up"]').forEach(el => {
+      const delay = parseInt(el.dataset.delay || 0) / 1000;
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+        y: 50, opacity: 0, duration: 0.8, delay, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
